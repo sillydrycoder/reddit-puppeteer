@@ -64,7 +64,7 @@ async function createPostProcess(page ,subreddit, flair, title) {
         page.goto(`https://www.reddit.com/r/${subreddit}/submit`),
         page.waitForNavigation({timeout:60000})
     ])
-    await page.screenshot({ path: 'login.png' });
+    await page.screenshot({ path: 'post.png' });
     // Handle cookies
     await agreeToCookies(page);
     // Add title to the textarea
